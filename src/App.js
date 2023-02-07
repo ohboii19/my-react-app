@@ -1,22 +1,52 @@
-import logo from './logo.svg';
+// import logo from './logo.svg';
+import React, { useState } from "react";
 import './App.css';
 
+import davyPic from "./davy_pic.png";
+
+
 function App() {
+  const [count, setCount] = useState(0);
   return (
     <div className="App">
       <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
+        <img src={davyPic} className="App-logo" alt="logo" />
         <p>
-          Edit <code>src/App.js</code> and save to reload.
+          My name is Davy Bossin. I am a third year computer science student at UVic and I am learning React!
         </p>
         <a
           className="App-link"
-          href="https://reactjs.org"
+          href="https://github.com/ohboii19"
           target="_blank"
           rel="noopener noreferrer"
         >
-          Learn React
+          Check out my GitHub
         </a>
+        <div
+        className="Buttons"
+        >
+          <button
+          className="Button"
+          onClick={() => setCount(count + 1)}
+          >
+            Increment
+          </button>
+          <button
+          className="Button"
+          onClick={() => setCount(count - 1)}
+          >
+            Decrement
+          </button>
+          <button
+          className="Button"
+          onClick={() => setCount(0)}
+          >
+            Clear
+          </button>
+        </div>
+        <p>
+         {count}
+        </p>
       </header>
     </div>
   );

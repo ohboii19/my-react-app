@@ -2,7 +2,6 @@ import React, { useState } from "react";
 import "./QuoteGen.css";
   
   function QuoteGen() {
-    const [fact, setFact] = useState("Facts");
     const [index, setIndex] = useState(0);
     const facts = [
         "SJC is a Media Company",

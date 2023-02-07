@@ -1,5 +1,8 @@
 // import logo from './logo.svg';
 import React, { useState } from "react";
+import Header from "./Header/Header.js"
+import Counter from "./Counter/Counter.js"
+import QuoteGen from "./QuoteGen/QuoteGen.js";
 import './App.css';
 
 import davyPic from "./davy_pic.png";
@@ -9,7 +12,8 @@ function App() {
   const [count, setCount] = useState(0);
   return (
     <div className="App">
-      <header className="App-header">
+      <Header />
+      <body className="App-body">
         <img src={davyPic} className="App-logo" alt="logo" />
         <p>
           My name is Davy Bossin. I am a third year computer science student at UVic and I am learning React!
@@ -22,32 +26,9 @@ function App() {
         >
           Check out my GitHub
         </a>
-        <div
-        className="Buttons"
-        >
-          <button
-          className="Button"
-          onClick={() => setCount(count + 1)}
-          >
-            Increment
-          </button>
-          <button
-          className="Button"
-          onClick={() => setCount(count - 1)}
-          >
-            Decrement
-          </button>
-          <button
-          className="Button"
-          onClick={() => setCount(0)}
-          >
-            Clear
-          </button>
-        </div>
-        <p>
-         {count}
-        </p>
-      </header>
+        <Counter />
+      <QuoteGen/>
+      </body>
     </div>
   );
 }

@@ -1,4 +1,4 @@
-Use follwoing URL to visit live webpage
+Use following URL to visit live webpage
 
 https://davy-react-app.web.app/
 

@@ -26,8 +26,8 @@ function App() {
         >
           Check out my GitHub
         </a>
-        <Counter />
-      <QuoteGen/>
+        <Counter className="Counter"/>
+        <QuoteGen className="QuoteGen"/>
       </body>
     </div>
   );

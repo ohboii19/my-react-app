@@ -11,7 +11,7 @@ import "./QuoteGen.css";
         "SJC was founded in 1956",
         "Tyler Sebastian is a Senior Software Developer at Assembly",
         "Tony Gagliano is Executive Chairman and CEO of SJC",
-        "Erika Wiedemann, P.Eng, is a Senior Engineer at Assemnly"
+        "Erika Wiedemann, P.Eng, is a Senior Engineer at Assembly"
 
     ]
   

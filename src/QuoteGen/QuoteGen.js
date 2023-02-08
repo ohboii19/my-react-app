@@ -11,7 +11,7 @@ import "./QuoteGen.css";
         "SJC was founded in 1956",
         "Tyler Sebastian is a Senior Software Developer at Assembly",
         "Tony Gagliano is Executive Chairman and CEO of SJC",
-        "Erika Wiedemann, P.Eng is a Senior Engineer at Assemnly"
+        "Erika Wiedemann, P.Eng, is a Senior Engineer at Assemnly"
 
     ]
   
@@ -19,7 +19,7 @@ import "./QuoteGen.css";
       <div>
         <h3>Fun Facts about SJC and Assembly</h3>
         <button 
-        onClick={() => setIndex((index + 1) % 4)}
+        onClick={() => setIndex((index + 1) % facts.length)}
         >
             Generate Fact
         </button>
